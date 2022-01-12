@@ -64,7 +64,7 @@ static int alsa_init(void)
   if (strcasecmp(name, "PulseAudio") == 0) {
     // PulseAudio's ALSA emulation is known to be broken..
     printf("alsa: refusing to run under PulseAudio's emulation\n");
-    //return -1;
+    return -1;
   }
   else {
     printf("alsa: using '%s', set ALSA_NAME to change\n", name);
