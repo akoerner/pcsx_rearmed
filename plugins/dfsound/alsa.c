@@ -70,7 +70,7 @@ static int alsa_init(void)
     printf("alsa: using '%s', set ALSA_NAME to change\n", name);
   }
  }
-                printf("Soundcard #%i:\n", idx + 1);
+                printf("Soundcard :\n");
                 printf("  card - %i\n", snd_ctl_card_info_get_card(info));
                 printf("  id - '%s'\n", snd_ctl_card_info_get_id(info));
                 printf("  driver - '%s'\n", snd_ctl_card_info_get_driver(info));
